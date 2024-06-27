@@ -17,14 +17,15 @@ import asyncio, datetime
 
 class Client(Methods, Handlers):
     """
-        Client class for handling automation tasks for a WhatsApp bot using Selenium.
+    Client class for handling automation tasks for a WhatsApp bot using Selenium.
 
-        Args:
-            client_name (str): The name of the client.
-            number (str): A unique identifier (phone number) for the client.
-            options (Optional[webdriver.ChromeOptions], optional): Chrome options for configuring the WebDriver instance.
-            executable_path (str, optional): Path to the ChromeDriver executable. Default is None, in which case the default system path for the ChromeDriver is used.
+    Args:
+        client_name (str): The name of the client.
+        number (str): A unique identifier (phone number) for the client.
+        options (Optional[webdriver.ChromeOptions], optional): Chrome options for configuring the WebDriver instance.
+        executable_path (str, optional): Path to the ChromeDriver executable. Default is None, in which case the default system path for the ChromeDriver is used.
     """
+
     def __init__(
         self,
         client_name: str,
