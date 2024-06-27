@@ -1,0 +1,30 @@
+[project]
+name = "crazyshit"
+version = "0.0.1"
+authors = [
+  { name="virus", email="@" },
+]
+description = "soon"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "selenium",
+  "phonenumbers",
+  "asyncio"
+]
+
+[project.urls]
+Homepage = "https://github.com/dev-virous/CrazyShit"
+Issues = "https://github.com/dev-virous/CrazyShit/issues"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+include = ["crazyshit*"]
+exclude = ["docs*", "tests*"]
