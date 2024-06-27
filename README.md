@@ -35,3 +35,9 @@ loop.run_forever()
 
 ## Requirements
 - Python 3.8 or higher.
+- Selenium
+
+## Installing
+``` bash
+pip3 install crazyshit
+```
