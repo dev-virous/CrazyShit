@@ -23,7 +23,15 @@ class Client(Methods, Handlers):
         options: Optional[webdriver.ChromeOptions] = None,
         executable_path: str = None,
     ):
-        """A client object."""
+        """
+            Client class for handling automation tasks for a WhatsApp bot using Selenium.
+            
+            Args:
+                client_name (str): The name of the client.
+                number (str): A unique identifier (phone number) for the client.
+                options (Optional[webdriver.ChromeOptions], optional): Chrome options for configuring the WebDriver instance.
+                executable_path (str, optional): Path to the ChromeDriver executable. Default is None, in which case the default system path for the ChromeDriver is used.
+        """
         number = phonenumbers.parse(number)
         self.country_code = number.country_code
         self.national_number = number.national_number
