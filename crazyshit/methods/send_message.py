@@ -11,7 +11,12 @@ class SendMessage:
         to: str,
         text: str,
     ):
-        """Sendin message to specific user."""
+        """Sending message to specific chat.
+
+        Args:
+            to (str): The chat title.
+            text (str): Text message.
+        """
         WebDriverWait(self.session, 30).until(
             ec.presence_of_element_located(
                 (By.XPATH, f"//span[contains(@title, '{to}')]")

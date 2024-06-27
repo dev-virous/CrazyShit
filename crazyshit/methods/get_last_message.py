@@ -8,8 +8,15 @@ import crazyshit
 
 
 class GetLastMessage:
-    async def get_last_message(self: "crazyshit.Client", from_: str):
-        """Get last message from specific chat."""
+    async def get_last_message(self: "crazyshit.Client", from_: str) -> str:
+        """Get last message from an chat.
+
+        Args:
+            from_ (str): The chat title.
+
+        Returns:
+            str: on success, the last message content is returned.
+        """
         WebDriverWait(self.session, 30).until(
             ec.presence_of_element_located(
                 (By.XPATH, f"//span[contains(@title, '{from_}')]")
