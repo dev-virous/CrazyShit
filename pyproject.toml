@@ -4,7 +4,7 @@ version = "0.0.1"
 authors = [
   { name="virus", email="@" },
 ]
-description = "soon"
+description = "CrazyShit is a Python library designed for automating tasks for a WhatsApp bot using Selenium. It enables handling of updates and sending messages efficiently."
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
