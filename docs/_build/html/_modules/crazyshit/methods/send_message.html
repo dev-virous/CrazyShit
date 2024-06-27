@@ -261,7 +261,12 @@
         <span class="n">to</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
         <span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Sendin message to specific user.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Sending message to specific chat.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            to (str): The chat title.</span>
+<span class="sd">            text (str): Text message.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">WebDriverWait</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span><span class="o">.</span><span class="n">until</span><span class="p">(</span>
             <span class="n">ec</span><span class="o">.</span><span class="n">presence_of_element_located</span><span class="p">(</span>
                 <span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">XPATH</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;//span[contains(@title, &#39;</span><span class="si">{</span><span class="n">to</span><span class="si">}</span><span class="s2">&#39;)]&quot;</span><span class="p">)</span>
